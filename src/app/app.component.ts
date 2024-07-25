@@ -1,13 +1,16 @@
+
+
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { StringCalculatorComponent, } from './string-component/string-component.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [StringCalculatorComponent],
+  template: `<app-string-calculator></app-string-calculator>`,
 })
 export class AppComponent {
-  title = 'my-app';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 }

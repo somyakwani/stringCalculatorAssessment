@@ -1,0 +1,8 @@
+<div>
+    <h1>String Calculator</h1>
+    <input [(ngModel)]="input" placeholder="Enter numbers" />
+    <button (click)="calculate()">Calculate</button>
+    <div *ngIf="result !== null">Result: {{ result }}</div>
+    <div *ngIf="errorMessage" style="color: red;">Error: {{ errorMessage }}</div>
+  </div>
+  
